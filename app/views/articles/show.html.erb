@@ -6,3 +6,7 @@
 <br>
 <br>
 <%= link_to "Edit", edit_article_path(@article), method: :get %>
+<br>
+<br>
+<h3>Comments</h3>
+<%= render partial: 'comment', collection: @article.comments.reverse %>
